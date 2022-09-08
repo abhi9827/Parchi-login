@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:login_firebase/mode/user_model.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:login_firebase/model/user_model.dart';
 import 'package:login_firebase/screens/Leaverequest.dart';
 import 'login_screen.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Parchi"),
+        title: const Text("Parchi(Student Page) "),
         centerTitle: true,
       ),
       drawer: SafeArea(

@@ -12,7 +12,7 @@ class _AdminState extends State<Admin> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Admin Dashboard"),
+        title: Text("Admin   Dashboard"),
         centerTitle: true,
       ),
       body: ListView(
