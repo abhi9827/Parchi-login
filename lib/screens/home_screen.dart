@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:login_firebase/mode/user_model.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:login_firebase/screens/Leaverequest.dart';
 import 'login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -92,7 +93,157 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      body: Container(),
+      body: SingleChildScrollView(
+        child: Container(
+          child: SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+              child: Column(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Leavepage()));
+                    },
+                    // Apply For Leave
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(28),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 5,
+                            blurRadius: 7,
+                            offset: Offset(0, 3), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      height: 150,
+                      width: 300,
+                      child: Center(
+                          child: Text("Apply For Leave",
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.bold))),
+                    ),
+                  ),
+                  //For Swimming
+                  SizedBox(
+                    height: 30,
+                  ),
+                  new GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.9),
+                            spreadRadius: 5,
+                            blurRadius: 7,
+                            offset: Offset(0, 3), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      height: 150,
+                      width: 300,
+                      child: Center(
+                          child: Text("Swimming Pass",
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.bold))),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+
+                  //For Exams
+                  new GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.9),
+                            spreadRadius: 5,
+                            blurRadius: 7,
+                            offset: Offset(0, 3), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      height: 150,
+                      width: 300,
+                      child: Center(
+                          child: Text("Exams",
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.bold))),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+
+                  //For Results
+                  new GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.9),
+                            spreadRadius: 5,
+                            blurRadius: 7,
+                            offset: Offset(0, 3), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      height: 150,
+                      width: 300,
+                      child: Center(
+                          child: Text("Results",
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.bold))),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+
+                  // For Library
+                  new GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.9),
+                            spreadRadius: 5,
+                            blurRadius: 7,
+                            offset: Offset(0, 3), // changes position of shadow
+                          ),
+                        ],
+                      ),
+                      height: 150,
+                      width: 300,
+                      child: Center(
+                          child: Text("Library",
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.bold))),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 
